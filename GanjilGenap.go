@@ -1,17 +1,14 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	var angka = 1002
+	angka := 1002
 
 	if angka%2 == 0 {
-		fmt.Println("angka tersebut merupakan bilangan genap")
+		fmt.Printf("%d adalah bilangan genap", angka)
+	} else {
+		fmt.Printf("%d adalah bilangan ganjil", angka)
 	}
-
-	if angka%2 == 1 {
-		fmt.Println("angka tersebut merupakan bilangan ganjil")
-	}
+	// nothing wrong, hanya memberi cara lain yang mungkin lebih simple
 }
